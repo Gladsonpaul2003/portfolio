@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLADY PORTFOLIO</title>
+    <link rel="icon" type="image/png" href="IMAGES/round glady logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+    <source autoplay loop muted plays-inline src="VIDEOS/bgstars.mp4" type="video/mp4">
+    </video>
+    
+    
+<!-- HEADER SECTION -->
+    <header>
+        <div class="left">
+            <img src="IMAGES/round glady logo.png" alt="logo">
+            <h1><span style="color: #72a1de;">Gladson</span><span>&nbsp;</span>Paul</h1>
+        </div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="box-icons">
+            <a href="https://www.linkedin.com/in/gladson-paul-dhinakaran-a09a1b251"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Gladsonpaul2003"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/_mr_g_l_a_d_y_/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" onclick="openWhatsApp()"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+    </header>
+
+<!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-info">
+            <div class="hero-info-title">
+                <i class="fa-brands fa-sketch"></i>
+                WEB DEVELOPER
+            </div>
+            <h1>Providing <span class="gradient">the best </span>Project <span class ="gradient">Experience</span></h1>
+
+            <p>I'm <span class="gradient">Gladson Paul</span> — A Passionate Web-App Developer with hands-on experience in building responsive and user-friendly websites. I specialize in creating clean, 
+                modern designs and turning ideas into interactive digital experiences.</p>
+        <a href="RESUME/GLADSON PAUL RESUME.pdf" download="Gladson_Paul_Resume.pdf" class="resumebutton">
+            <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        </div>
+       <div class="scroll-down" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })"></div>
+
+       <video autoplay loop muted plays-inline class="herovideo" src="VIDEOS/hero-video.mp4"></video>
+    </section>
+
+
+<!-- ABOUT SECTION -->
+    <section class="info-section" id="about">
+        <h1 class="section-title"><span class="gradient2">Hello,there</span>👋</h1>
+            <div class="info-cards">
+                <div class="card">
+                    <h1>Hi there, I'm Gladson Paul</h1>
+                    <p>I am a Fresher with experience in building interactive and responsive websites using HTML, CSS, JavaScript and react. I focus on creating clean user experience.</p>
+                    <img src="images/grid1.png" alt="">
+                </div>
+
+                <div class="card">
+                    <h1>Tech Stack</h1>
+                    <p>Iam specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.</p>
+                    <img src="images/grid2.png" alt="">
+                </div>
+
+                <div class="card">
+                    <h1>I’m very flexible with time zone communications & locations</h1>
+                    <p>I'm based in Madurai, Tamilnadu and Iam open to remote work worldwide.</p>   
+                    <video src="videos/glob.mp4" autoplay loop muted plays-inline></video>
+                    <button><i class='bx bx-send'></i> Contact Me</button>
+                </div>
+
+                <div class="card">
+                    <h1>My Passion for Coding</h1>
+                    <p>I love solving problems and building things through code. Programming isn't just my profession—it's my passion. I enjoy exploring new technologies, and enhancing my skills.</p>
+                    <img src="images/grid4.png" alt="">
+                </div>
+            </div>
+    </section>
+
+<!-- SKILLS SECTION -->
+        <section class="skills-section">
+            <h1 class="skills-title" id="skills">
+                <span class="gradient">My Skills </span>
+            </h1>
+
+            <div class="skills-box autoDisplay">
+                <img class="skills-image" src="/IMAGES/brianog.png" alt="">
+
+                <div class="Designer">
+                    <h1 class="gradient">Designer</h1>
+                    <p>I have expertise in HTML, CSS, JavaScript, and design tools like Figma. My strength lies in blending aesthetics with functionality to create seamless user experiences.</p>    
+                </div>
+                
+                <div class="coder">
+                    <h1 class="gradient">Coder</h1>
+                    <p>I’m skilled in HTML, CSS, JavaScript, and frameworks like React . I am also into App Development using react native .</p>
+                </div>
+            </div>
+        </section>
+
+<!-- SKILLS SLIDER -->
+    <div class="slider">
+                <div class="list">
+                    <div class="item"><img src="images/10.png" alt=""></div>
+                    <div class="item"><img src="images/6.png" alt=""></div>
+                    <div class="item"><img src="images/javascript.png" alt=""></div>
+                    <div class="item"><img src="images/figma.png" alt=""></div>
+                    <div class="item"><img src="images/github.png" alt=""></div>
+                </div>
+    </div>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+    <h1 class="section-title"><span class="gradient2">Let's talk</span>😊</h1>
+    <div class="contact-box">
+        <p>Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life. I'm here to help.</p>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="70f04757-33a5-4ec6-958c-6d3e439fa4ab">
+            <input type="hidden" name="subject" value="New Contact from Glady Portfolio">
+            <input type="hidden" name="from_name" value="Glady Portfolio">
+            <input type="checkbox" name="botcheck" style="display: none;">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" name="name" placeholder="Your Full name" type="text" required>
+            <label for="email">Email Address</label>
+            <input id="email" name="email" placeholder="Your Email" type="email" required>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Share your thoughts..." required></textarea>
+            <button type="submit">
+                Send Message <i class='bx bx-mail-send'></i>
+            </button>
+        </form>
+        <!-- Success Message -->
+        <div id="successMessage" style="display: none;">
+            <p style="color: #00e1fa; text-align: center; margin-top: 20px; font-weight: 600;">
+                ✓ Message sent successfully! I'll get back to you soon.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section footer-about">
+            <div class="logo">
+                <img src="IMAGES/round glady logo.png" alt="logo">
+                <span><span class="blue">Gladson</span>Paul</span>
+            </div>
+            <p>Creating innovative web experiences with passion and precision. Let's build something amazing together.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gladson-paul-dhinakaran-a09a1b251" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Gladsonpaul2003" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_mr_g_l_a_d_y_/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" onclick="openWhatsApp()"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section services">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Responsive Design</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">App Development</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Madurai, Tamil Nadu, India</p>
+            <p><i class="fa-solid fa-phone"></i> +91 6382628494</p>
+            <p><i class="fa-solid fa-envelope"></i> gpdhinakaran@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p class="copyright">
+                © 2025 <span>Gladson Paul</span>. All rights reserved.
+            </p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
+
+</body>
+</html>
+
+
+
